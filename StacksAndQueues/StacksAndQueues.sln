@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseNumbersWithStack", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicStackOperations", "BasicStackOperations\BasicStackOperations.csproj", "{1C191283-A3CA-46F4-945D-7C375681DAFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumElement", "MaximumElement\MaximumElement.csproj", "{D461FEDE-E9DE-4F59-A5BF-A7DB56CA0C37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicQueueOperations", "BasicQueueOperations\BasicQueueOperations.csproj", "{87A7FE32-14F0-41CE-BEF9-B1043A2C0985}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{1C191283-A3CA-46F4-945D-7C375681DAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C191283-A3CA-46F4-945D-7C375681DAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C191283-A3CA-46F4-945D-7C375681DAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D461FEDE-E9DE-4F59-A5BF-A7DB56CA0C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D461FEDE-E9DE-4F59-A5BF-A7DB56CA0C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D461FEDE-E9DE-4F59-A5BF-A7DB56CA0C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D461FEDE-E9DE-4F59-A5BF-A7DB56CA0C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A7FE32-14F0-41CE-BEF9-B1043A2C0985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A7FE32-14F0-41CE-BEF9-B1043A2C0985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A7FE32-14F0-41CE-BEF9-B1043A2C0985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A7FE32-14F0-41CE-BEF9-B1043A2C0985}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
