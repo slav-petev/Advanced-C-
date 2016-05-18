@@ -34,9 +34,9 @@ namespace BasicQueueOperations
 
         private static void EnqueueElements(Queue<int> queue, int[] elementsToEnqueue)
         {
-            foreach (var elementToEbqueue in elementsToEnqueue)
+            foreach (var elementToEnqueue in elementsToEnqueue)
             {
-                queue.Enqueue(elementToEbqueue);
+                queue.Enqueue(elementToEnqueue);
             }
         }
 
