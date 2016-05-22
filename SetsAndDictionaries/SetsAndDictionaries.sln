@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Phonebook", "05.Phoneboo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.MinerTask", "06.MinerTask\06.MinerTask.csproj", "{5FF259A2-69FE-4B5F-B9B7-602A8CCC74A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FixEmails", "FixEmails\FixEmails.csproj", "{D734278F-049C-4C3E-88DA-BDC9A7E6407C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.FixEmails", "07.FixEmails\07.FixEmails.csproj", "{D734278F-049C-4C3E-88DA-BDC9A7E6407C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
