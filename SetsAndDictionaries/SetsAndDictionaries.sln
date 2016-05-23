@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.HandsOfCards", "08.Hands
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.UserLogs", "09.UserLogs\09.UserLogs.csproj", "{B0B49F29-889A-4B90-A6CC-4507AE395109}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.PopulationCounter", "10.PopulationCounter\10.PopulationCounter.csproj", "{6FC76D92-7309-4084-ADBA-6BA2DECC5E3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.LogsAggregator", "11.LogsAggregator\11.LogsAggregator.csproj", "{14D3F220-7F33-44EA-AC86-4A18492E0C39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{B0B49F29-889A-4B90-A6CC-4507AE395109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0B49F29-889A-4B90-A6CC-4507AE395109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0B49F29-889A-4B90-A6CC-4507AE395109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC76D92-7309-4084-ADBA-6BA2DECC5E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC76D92-7309-4084-ADBA-6BA2DECC5E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC76D92-7309-4084-ADBA-6BA2DECC5E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC76D92-7309-4084-ADBA-6BA2DECC5E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D3F220-7F33-44EA-AC86-4A18492E0C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D3F220-7F33-44EA-AC86-4A18492E0C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D3F220-7F33-44EA-AC86-4A18492E0C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D3F220-7F33-44EA-AC86-4A18492E0C39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
