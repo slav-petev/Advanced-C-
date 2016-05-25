@@ -15,11 +15,6 @@ namespace _12.LegendaryFarming
 
         public override string ToString()
         {
-            return ToStringInternal();
-        }
-
-        protected virtual string ToStringInternal()
-        {
             return $"{Name}: {Quantity}";
         }
     }
