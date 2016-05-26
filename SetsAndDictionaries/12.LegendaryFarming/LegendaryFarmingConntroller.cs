@@ -1,9 +1,13 @@
 ﻿using System;
+using _12.LegendaryFarming.ResourcesInfoCollectors;
 
 namespace _12.LegendaryFarming
 {
     public class LegendaryFarmingConntroller
     {
+        private readonly IResourcesInfoCollector _resourcesInfoCollector =
+            new ConsoleResourcesInfoCollector();
+
         private readonly ResourceInfoParser _resourceInfoParser =
             new ResourceInfoParser();
 
@@ -16,7 +20,7 @@ namespace _12.LegendaryFarming
         {
             while (!_farmer.HasObtainedLegendaryItem)
             {
-                var resourcesInfo = Console.ReadLine().ToLower();
+                var resourcesInfo = _resourcesInfoCollector.GetResourcesInfo();
                 _resourceInfoParser.LoadResourcesInfo(resourcesInfo);
 
                 var currentResourceInfo = _resourceInfoParser.GetNextResourceInfo();

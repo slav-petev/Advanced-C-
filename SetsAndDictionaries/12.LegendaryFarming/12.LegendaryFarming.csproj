@@ -56,6 +56,8 @@
     <Compile Include="ResourceFactory.cs" />
     <Compile Include="ResourceInfo.cs" />
     <Compile Include="ResourceInfoParser.cs" />
+    <Compile Include="ResourcesInfoCollectors\ConsoleResourcesInfoCollector.cs" />
+    <Compile Include="ResourcesInfoCollectors\IResourcesInfoCollector.cs" />
     <Compile Include="Shards.cs" />
   </ItemGroup>
   <ItemGroup>
