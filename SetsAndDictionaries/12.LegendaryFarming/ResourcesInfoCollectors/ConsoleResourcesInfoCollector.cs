@@ -6,7 +6,7 @@ namespace _12.LegendaryFarming.ResourcesInfoCollectors
     {
         public string GetResourcesInfo()
         {
-            return Console.ReadLine();
+            return Console.ReadLine().ToLower();
         }
     }
 }
