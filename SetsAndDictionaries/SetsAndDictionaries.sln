@@ -25,6 +25,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.LogsAggregator", "11.Log
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.LegendaryFarming", "12.LegendaryFarming\12.LegendaryFarming.csproj", "{8C6F352A-522B-490B-8D40-418407E899C7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{445488AD-8525-4258-8B43-81196EE90EA2}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Slav Petkov\Desktop\2. Advanced-CSharp-Sets-Dictionaries-Exercises.docx = C:\Users\Slav Petkov\Desktop\2. Advanced-CSharp-Sets-Dictionaries-Exercises.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
