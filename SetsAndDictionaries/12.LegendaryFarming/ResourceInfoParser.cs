@@ -4,11 +4,12 @@ namespace _12.LegendaryFarming
 {
     public class ResourceInfoParser
     {
-        private readonly StringBuilder _resourcesInfo;
+        private readonly StringBuilder _resourcesInfo =
+            new StringBuilder();
 
-        public ResourceInfoParser(string resourcesInfo)
+        public void LoadResourcesInfo(string resourcesInfo)
         {
-            _resourcesInfo = new StringBuilder(resourcesInfo);
+            _resourcesInfo.Append(resourcesInfo);
         }
 
         public ResourceInfo GetNextResourceInfo()

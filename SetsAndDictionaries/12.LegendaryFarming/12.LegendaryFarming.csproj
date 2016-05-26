@@ -47,6 +47,7 @@
     <Compile Include="ExtensionMethods\DictionaryExtensionMethods.cs" />
     <Compile Include="Farmer.cs" />
     <Compile Include="Fragments.cs" />
+    <Compile Include="LegendaryFarmingConntroller.cs" />
     <Compile Include="LegendaryfarmingExcercise.cs" />
     <Compile Include="Motes.cs" />
     <Compile Include="OrdinaryResource.cs" />

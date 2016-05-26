@@ -15,15 +15,19 @@ namespace _12.LegendaryFarming
                 { Constants.Motes, new Motes(new ResourceInfo(Constants.Motes, 0L)) }
             };
 
-        private readonly Dictionary<string, Resource> _ordinaryResources =
-            new Dictionary<string, Resource>();
+        private readonly SortedDictionary<string, Resource> _ordinaryResources =
+            new SortedDictionary<string, Resource>();
 
         public string LegendaryItemName { get; private set; }
+
+        public bool HasObtainedLegendaryItem { get; private set; }
 
         public bool CanObtainLegendaryItem => _valuableResources.Any(resource =>
             resource.Value.Quantity >= Constants.LegendaryItemResourceCost);
 
-        public void AddResource(Resource resource)
+        
+
+        public void CollectResource(Resource resource)
         {
             if (resource.IsValuable)
             {
@@ -39,6 +43,7 @@ namespace _12.LegendaryFarming
         {
             _valuableResources[resource.Name].Quantity -= Constants.LegendaryItemResourceCost;
             LegendaryItemName = "Random";
+            HasObtainedLegendaryItem = true;
         }
 
         public void PrintStats()
