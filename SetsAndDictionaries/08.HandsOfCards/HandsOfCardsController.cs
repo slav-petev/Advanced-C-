@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using DictionaryExtensions;
 
 namespace _08.HandsOfCards
 {
@@ -22,15 +23,9 @@ namespace _08.HandsOfCards
                 var playerName = cardHandInfo.Substring(0, colonDelimeterIndex);
                 var cardsInHand = cardHandInfo.Substring(colonDelimeterIndex + 2);
 
-                var cardHand = _cardHandParser.ParseCardHand(cardsInHand);
-                if (_cardHands.ContainsKey(playerName))
-                {
-                    _cardHands[playerName].UnionWith(cardHand);
-                }
-                else
-                {
-                    _cardHands.Add(playerName, new HashSet<Card>(cardHand));
-                }
+                var cardHand = new HashSet<Card>(_cardHandParser.ParseCardHand(cardsInHand));
+                _cardHands.AddOrUpdate(playerName, cardHand,
+                    () => _cardHands[playerName].UnionWith(cardHand));
 
                 cardHandInfo = Console.ReadLine();
             }

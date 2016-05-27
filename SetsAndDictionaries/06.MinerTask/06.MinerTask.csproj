@@ -49,6 +49,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DictionaryExtensions\DictionaryExtensions.csproj">
+      <Project>{1ffe2c38-732e-42dd-ac2d-9b16c55254f0}</Project>
+      <Name>DictionaryExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

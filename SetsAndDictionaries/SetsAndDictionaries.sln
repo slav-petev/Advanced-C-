@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.LogsAggregator", "11.Log
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.LegendaryFarming", "12.LegendaryFarming\12.LegendaryFarming.csproj", "{8C6F352A-522B-490B-8D40-418407E899C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryExtensions", "DictionaryExtensions\DictionaryExtensions.csproj", "{1FFE2C38-732E-42DD-AC2D-9B16C55254F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.SrabskoUnleashed", "13.SrabskoUnleashed\13.SrabskoUnleashed.csproj", "{F4431F31-CD9D-4C71-903B-283D2E3E07AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{8C6F352A-522B-490B-8D40-418407E899C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C6F352A-522B-490B-8D40-418407E899C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C6F352A-522B-490B-8D40-418407E899C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FFE2C38-732E-42DD-AC2D-9B16C55254F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FFE2C38-732E-42DD-AC2D-9B16C55254F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FFE2C38-732E-42DD-AC2D-9B16C55254F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FFE2C38-732E-42DD-AC2D-9B16C55254F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4431F31-CD9D-4C71-903B-283D2E3E07AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4431F31-CD9D-4C71-903B-283D2E3E07AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4431F31-CD9D-4C71-903B-283D2E3E07AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4431F31-CD9D-4C71-903B-283D2E3E07AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using DictionaryExtensions;
 using _12.LegendaryFarming.ExtensionMethods;
 
 namespace _12.LegendaryFarming
@@ -25,18 +26,32 @@ namespace _12.LegendaryFarming
         public bool CanObtainLegendaryItem => _valuableResources.Any(resource =>
             resource.Value.Quantity >= Constants.LegendaryItemResourceCost);
 
-        
-
         public void CollectResource(Resource resource)
         {
             if (resource.IsValuable)
             {
-                _valuableResources.AddOrUpdate(resource.Name, resource);
+                CollectValuableResource(resource);
             }
             else
             {
-                _ordinaryResources.AddOrUpdate(resource.Name, resource);
+                CollectOrdinaryResource(resource);
             }
+        }
+
+        private void CollectValuableResource(Resource resource)
+        {
+            CollectResource(resource, _valuableResources);
+        }
+
+        private void CollectOrdinaryResource(Resource resource)
+        {
+            CollectResource(resource, _ordinaryResources);
+        }
+
+        private void CollectResource(Resource resource, IDictionary<string, Resource> resources)
+        {
+            resources.AddOrUpdate(resource.Name, resource,
+                () => resources[resource.Name].Quantity += resource.Quantity);
         }
 
         public void ObtainLegendaryItem(Resource resource)

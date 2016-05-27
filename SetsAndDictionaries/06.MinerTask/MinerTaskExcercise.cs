@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DictionaryExtensions;
 
 namespace _06.MinerTask
 {
@@ -18,14 +19,8 @@ namespace _06.MinerTask
             {
                 var resourceQuantity = long.Parse(Console.ReadLine());
 
-                if (resourcesInfo.ContainsKey(resourceName))
-                {
-                    resourcesInfo[resourceName] += resourceQuantity;
-                }
-                else
-                {
-                    resourcesInfo.Add(resourceName, resourceQuantity);
-                }
+                resourcesInfo.AddOrUpdate(resourceName, resourceQuantity,
+                    () => resourcesInfo[resourceName] += resourceQuantity);
 
                 resourceName = Console.ReadLine();
             }

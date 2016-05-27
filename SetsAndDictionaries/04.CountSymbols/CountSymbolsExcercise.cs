@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DictionaryExtensions;
 
 namespace _04.CountSymbols
 {
@@ -15,14 +16,8 @@ namespace _04.CountSymbols
 
             foreach (var symbol in text)
             {
-                if (symbolsInfo.ContainsKey(symbol))
-                {
-                    ++symbolsInfo[symbol];
-                }
-                else
-                {
-                    symbolsInfo.Add(symbol, 1L);
-                }
+                symbolsInfo.AddOrUpdate(symbol, 1,
+                    () => ++symbolsInfo[symbol]);
             }
 
             foreach (var symbolInfo in symbolsInfo)

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DictionaryExtensions;
 
 namespace _11.LogsAggregator
 {
@@ -35,27 +36,15 @@ namespace _11.LogsAggregator
         private static void ProcessUserIp(string username, string ip, 
             SortedDictionary<string, SortedSet<string>> userSessionsIpInfo)
         {
-            if (userSessionsIpInfo.ContainsKey(username))
-            {
-                userSessionsIpInfo[username].Add(ip);
-            }
-            else
-            {
-                userSessionsIpInfo.Add(username, new SortedSet<string> { ip });
-            }
+            userSessionsIpInfo.AddOrUpdate(username, new SortedSet<string>(new[] { ip }),
+                () => userSessionsIpInfo[username].Add(ip));
         }
 
         private static void ProcessUserSessionDuration(string username, int duration,
             Dictionary<string, int> userSessionsDurationInfo)
         {
-            if (userSessionsDurationInfo.ContainsKey(username))
-            {
-                userSessionsDurationInfo[username] += duration;
-            }
-            else
-            {
-                userSessionsDurationInfo.Add(username, duration);
-            }
+            userSessionsDurationInfo.AddOrUpdate(username, duration, () =>
+                userSessionsDurationInfo[username] += duration);
         }
     }
 }

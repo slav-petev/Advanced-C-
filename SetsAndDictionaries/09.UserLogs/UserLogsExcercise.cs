@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DictionaryExtensions;
 
 namespace _09.UserLogs
 {
@@ -20,24 +21,12 @@ namespace _09.UserLogs
                 var ip = inputParts[0].Substring(inputParts[0].IndexOf('=') + 1);
                 var username = inputParts[2].Substring(inputParts[2].IndexOf('=') + 1);
 
-                if (userMesagesInfo.ContainsKey(username))
-                {
-                    if (userMesagesInfo[username].ContainsKey(ip))
+                userMesagesInfo.AddOrUpdate(username, 
+                    new Dictionary<string, int> { { ip, 1} }, 
+                    () => userMesagesInfo[username].AddOrUpdate(ip, 1, () =>
                     {
                         ++userMesagesInfo[username][ip];
-                    }
-                    else
-                    {
-                        userMesagesInfo[username].Add(ip, 1);
-                    }
-                }
-                else
-                {
-                    userMesagesInfo.Add(username, new Dictionary<string, int>
-                    {
-                        { ip, 1 }
-                    });
-                }
+                    }));
                 input = Console.ReadLine();
             }
 
