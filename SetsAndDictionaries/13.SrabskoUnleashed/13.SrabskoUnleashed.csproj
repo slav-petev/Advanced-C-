@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F90F9D3C-48C2-41D8-A46C-96ACFB68D42B}</ProjectGuid>
+    <ProjectGuid>{F4431F31-CD9D-4C71-903B-283D2E3E07AF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_14.LettersChangeNumbers</RootNamespace>
-    <AssemblyName>14.LettersChangeNumbers</AssemblyName>
+    <RootNamespace>_13.SrabskoUnleashed</RootNamespace>
+    <AssemblyName>13.SrabskoUnleashed</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LettersChangeNumbersExcercise.cs" />
+    <Compile Include="SrabskoUnleashedExcercise.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DictionaryExtensions\DictionaryExtensions.csproj">
+      <Project>{1ffe2c38-732e-42dd-ac2d-9b16c55254f0}</Project>
+      <Name>DictionaryExtensions</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

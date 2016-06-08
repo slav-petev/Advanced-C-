@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F90F9D3C-48C2-41D8-A46C-96ACFB68D42B}</ProjectGuid>
+    <ProjectGuid>{A9F428AB-C661-49FF-BB36-3741EE970B3D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_14.LettersChangeNumbers</RootNamespace>
-    <AssemblyName>14.LettersChangeNumbers</AssemblyName>
+    <RootNamespace>_08.ExtractHyperlinks</RootNamespace>
+    <AssemblyName>08.ExtractHyperlinks</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LettersChangeNumbersExcercise.cs" />
+    <Compile Include="ExtractHyperlinksExcercise.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
